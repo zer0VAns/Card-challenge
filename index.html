@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card1">
+
+        <div id="card1">
+            <p class="text-card1">000</p>
+        </div>
+
+        <div id="card2">
+            <img src="./interactive-card-details-form-main/images/card-logo.svg" alt="" id="card-logo">
+            <p class="white num-card">0000 0000 0000 0000</p>
+            <div class="info-card">
+                <p class="white name-card">JANE APPLESEED</p>
+                <p class="white expirationDate-card">00/00</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="form">
+        <form action="" id="form" onsubmit="verificar()">
+            <div>
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" name="name" id="name" onkeyup="validar()" onblur="validar()" placeholder="e.g. Jane Appleseed" required class="border" minlength="10" maxlength="40">
+                <div id="message" hidden>
+                    Wrong format, letters only (A-Z, a-z) 
+                  </div>
+            </div>
+            <div>
+                <label for="number">CARD NUMBER</label>
+                <input type="text" name="number-card" id="number-c" placeholder="e.g. 1234 5678 9123 0000" required class="border" onkeyup="validar2()" onblur="validar2()">
+                <div id="message2" hidden>
+                    Wrong format, numbers only (0-9) 
+                  </div>
+            </div>
+            <div class="info-card2">
+                <label for="month-year" id="month-year">EXP. DATE (MM/YY)</label>
+                <label for="number" id="cvc">CVC</label>
+                <div class="info-card2 info-card3">
+                    <input type="number" name="month" id="month-card" class="date-card border" placeholder="MM" min="1"
+                        max="12" required>
+                    <input type="number" name="year" id="year-card" class="date-card border" placeholder="YY" min="2023"
+                        max="2033" required>
+                    <input type="number" name="number" class="border" id="cvc-card" placeholder="e.g. 123" required>
+                </div>
+            </div>
+            <div>
+                <label for="submit" id="submit-label"><input type="submit" id="submit" name="submit-button" value="Confirm"></label>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
