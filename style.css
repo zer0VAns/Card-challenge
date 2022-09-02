@@ -25,13 +25,18 @@ input[type=number] { -moz-appearance:textfield; }
 .card1{
     background-image: url(./interactive-card-details-form-main/images/bg-main-mobile.png);
     height: 240px;
-
+    margin: 0 auto !important;
+}
+.card2{
+    margin: 0 auto !important;
+    width: 340px;
+    height: 300px;
 }
 #card1 {
     background-image: url(./interactive-card-details-form-main/images/bg-card-back.png);
     position: absolute;
-    margin-top: 3.1%;
-    margin-left: 14.5%;
+    margin-top: 10px;
+    margin-left: 35px;
     width: 310px;
     height: 160px;
     border-radius: 10px;
@@ -39,8 +44,8 @@ input[type=number] { -moz-appearance:textfield; }
 #card2{
     background-image: url(./interactive-card-details-form-main/images/bg-card-front.png);
     position: absolute;
-    margin-top: 28.8%;
-    margin-left: 4%;
+    margin-top: 106px;
+    margin-left: 0px;
     width: 300px;
     height: 170px;
     border-radius: 10px;
@@ -125,7 +130,7 @@ label {
  }
  .info-card3{
     position: absolute;
-    margin-top: 16%;
+    margin-top: 60px;
  }
  #cvc{
     font-size: 18px;
@@ -167,19 +172,19 @@ margin-left: 17%;
     z-index: 10;
     color: var(--Red);
 }
-@media (min-width:1560px) {
+@media (min-width:1500px) {
     .card1{
         background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
         height: 100%;
-        width: 31.3%;  
+        width: 600px;  
         position: absolute;
         top: 0px;
     }
     #card1 {
         background-image: url(./interactive-card-details-form-main/images/bg-card-back-desktop.png);
         position: absolute;
-        margin-top: 52vh;
-        margin-left: 43vh;
+        margin-top: 480px;
+        margin-left: 200px;
         width: 447px;
         height: 245px;
         border-radius: 10px;
@@ -187,8 +192,8 @@ margin-left: 17%;
     #card2{
         background-image: url(./interactive-card-details-form-main/images/bg-card-front-desktop.png);
         position: absolute;
-        margin-top: 20vh;
-        margin-left: 32vh;
+        margin-top: 180px;
+        margin-left: 100px;
         width: 447px;
         height: 245px;
         border-radius: 10px;
@@ -233,9 +238,9 @@ margin-left: 17%;
         flex-direction: row;
     }
     .form   {
-        margin-top: 12.5%;
+        margin-top: 230px;
         height: 50vh;
-        margin-left: 28%;
+        margin-left: 500px;
     }
     form{
         width: 400px;
@@ -270,7 +275,7 @@ margin-left: 17%;
      }
      .info-card3{
         position: absolute;
-        margin-top: 4.8%;
+        margin-top: 85px;
      }
      #cvc{
         font-size: 18px;
