@@ -167,7 +167,7 @@ margin-left: 17%;
     z-index: 10;
     color: var(--Red);
 }
-@media (min-width:600px) {
+@media (min-width:1560px) {
     .card1{
         background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
         height: 100%;
